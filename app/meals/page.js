@@ -1,14 +1,6 @@
-import Link from "next/link";
-
 const MealsPage = () => {
-  return (
-    <main>
-          <h1>Meals Page</h1>
-          <p>
-              <Link href='/meals/share'>Share Page</Link>
-          </p>
-    </main>
-  );
+  console.log('Meals Page')
+  return <h1>Meals Page</h1>;
 };
 
-export default MealsPage
+export default MealsPage;

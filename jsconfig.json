@@ -1,5 +1,7 @@
 {
-  "rules": {
-    "@next/next/no-img-element": "off"
+  "compilerOptions": {
+    "paths": {
+      "@/*": ["./*"]
+    }
   }
 }

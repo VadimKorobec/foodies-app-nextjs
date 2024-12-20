@@ -1,9 +1,5 @@
 const SharePage = () => {
-  return (
-    <main>
-      <h1>Share Meal</h1>
-    </main>
-  );
+  return <h1>Share Meal</h1>;
 };
 
 export default SharePage;
