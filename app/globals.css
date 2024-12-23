@@ -15,7 +15,8 @@ body {
 
 
 
-.not-found {
+.not-found,
+.error {
   margin-top: 5rem;
   text-align: center;
 }
