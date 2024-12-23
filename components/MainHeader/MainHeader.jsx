@@ -1,5 +1,3 @@
-
-
 import Link from "next/link";
 import Image from "next/image";
 
@@ -9,10 +7,7 @@ import Navigate from "../Navigate/Navigate";
 
 import styles from "./MainHeader.module.css";
 
-
 const MainHeader = () => {
- 
-
   return (
     <>
       <MainHeaderBackground />
@@ -21,7 +16,7 @@ const MainHeader = () => {
           <Image src={logoImg} alt="A plate with food" priority />
           <Link href="/">Next Level Food</Link>
         </div>
-       <Navigate/>
+        <Navigate />
       </header>
     </>
   );
