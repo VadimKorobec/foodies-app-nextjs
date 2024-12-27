@@ -1,5 +1,6 @@
-import styles from "./page.module.css";
 import MealsFormSubmit from "@/components/MealsFormSubmit/MealsFormSubmit";
+
+import styles from "./page.module.css";
 
 const ShareMealPage = () => {
   return (

@@ -1,13 +1,16 @@
 "use client";
 
+import { useFormStatus } from "react-dom";
+
 import { shareMeal } from "@/lib/actions";
 import ImagePicker from "../ImagePicker/ImagePicker";
 
 import styles from "./MealsFormSubmit.module.css";
-import { useFormStatus } from "react-dom";
 
 const MealsFormSubmit = () => {
-    useFormStatus()
+  const { pending } = useFormStatus();
+  
+
   return (
     <form className={styles.form} action={shareMeal}>
       <div className={styles.row}>
@@ -39,7 +42,9 @@ const MealsFormSubmit = () => {
       </p>
       <ImagePicker label="Your image" name="image" />
       <p className={styles.actions}>
-        <button type="submit">Share Meal</button>
+        <button disabled={pending} type="submit">
+          {pending ? 'Share meal':'Submitting...' }
+        </button>
       </p>
     </form>
   );
